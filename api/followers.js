@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const username = req.query.user || "Twitter";
+  const username = req.query.user || "trentonsolana";
   const url = `https://nitter.net/${username}`;
 
   try {
