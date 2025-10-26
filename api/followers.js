@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   const url = `https://api.allorigins.win/raw?url=${encodeURIComponent(target)}`;
 
   try {
-    const response = await fetch(url);
+    const response = await fetch(target);
     const html = await response.text();
 
     // Extract the followers count
