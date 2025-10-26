@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const username = req.query.user || "trentonsolana";
-  const url = `https://nitter.net/${username}`;
+  const url = `https://abola.pt`;
 
   try {
     const response = await fetch(url);
