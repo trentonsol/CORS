@@ -1,6 +1,7 @@
 export default async function handler(req, res) {
-  const username = req.query.user || "trentonsolana";
-  const url = `https://nitter.net/trentonsolana`;
+  const username = req.query.user || "Twitter";
+  const target = `https://nitter.poast.org/trentonsolana`;
+  const url = `https://api.allorigins.win/raw?url=${encodeURIComponent(target)}`;
 
   try {
     const response = await fetch(url);
@@ -18,3 +19,4 @@ export default async function handler(req, res) {
     res.status(500).json({ error: err.message });
   }
 }
+
