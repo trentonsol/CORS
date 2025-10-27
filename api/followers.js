@@ -11,6 +11,7 @@ export default async function handler(req, res) {
 
     // Load the HTML into cheerio (creates a virtual DOM)
     const $ = cheerio.load(html);
+    console.log($('.followers').text());
     const followers = $('.followers .profile-stat-num').text().trim();
 
     // Set CORS headers
