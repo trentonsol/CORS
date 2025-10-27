@@ -1,3 +1,5 @@
+import * as cheerio from 'cheerio';
+
 export default async function handler(req, res) {
   const username = req.query.user || "Twitter";
   const target = `https://nitter.poast.org/trentonsolana`;
@@ -7,8 +9,9 @@ export default async function handler(req, res) {
     const response = await fetch(target);
     const html = await response.text();
 
-    // Extract the followers count
-    const followers = document.querySelector('.followers .profile-stat-num').textContent;
+    // Load the HTML into cheerio (creates a virtual DOM)
+    const $ = cheerio.load(html);
+    const followers = $.querySelector('.followers .profile-stat-num').textContent;
 
     // Set CORS headers
     res.setHeader("Access-Control-Allow-Origin", "*");
