@@ -16,7 +16,7 @@ export default async function handler(req, res) {
 
     // Set CORS headers
     res.setHeader("Access-Control-Allow-Origin", "*");
-    res.status(200).send(followers);
+    res.status(200).send(html);
   } catch (err) {
     console.error("Detailed error:", err.message);
     res.status(500).json({ error: err.message });
