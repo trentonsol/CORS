@@ -8,8 +8,7 @@ export default async function handler(req, res) {
     const html = await response.text();
 
     // Extract the followers count
-    const match = html.match(/(\d[\d,]*)\s*<\/span>\s*<span[^>]*>\s*Followers/i)?.[1];
-    const followers = match ? match[1] : "Unknown";
+    const followers = document.querySelector('.followers .profile-stat-num').textContent;
 
     // Set CORS headers
     res.setHeader("Access-Control-Allow-Origin", "*");
