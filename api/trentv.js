@@ -1,6 +1,9 @@
 import audioData from '../data/audioData.json' with { type: 'json' };
 import footerData from '../data/footerData.json' with { type: 'json' };
 
+function modulo(dividend, divisor) {
+  return ((dividend % divisor) + divisor) % divisor;
+}
 
 export default function handler(req, res) {
 
@@ -14,17 +17,17 @@ export default function handler(req, res) {
     }
 
     try {
-        const audioDataLength = audioData.length;
+        const audioDataLength = 10;
         const rootIndex = Math.floor(Math.random() * audioDataLength);
-        const currentIndex = (rootIndex + 5) % audioDataLength
-        const nextUpIndex = (currentIndex + 1) % audioDataLength;
-        const voiced = (currentIndex - rootIndex) % audioDataLength;
+        const currentIndex = modulo((rootIndex + 5), audioDataLength);
+        const nextUpIndex = modulo((currentIndex + 1), audioDataLength);
+        const voiced = modulo((currentIndex - rootIndex), audioDataLength);
         let result = {};
 
         result.audioData = audioData[currentIndex];
         result.nexUp = { name: audioData[nextUpIndex].name, title: audioData[nextUpIndex].title };
         result.footerData = footerData[currentIndex];
-        
+
         result.stats = {
             "total": audioDataLength,
             "queued": audioDataLength - voiced,
