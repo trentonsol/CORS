@@ -4,7 +4,7 @@ import footerData from '../data/footerData.json' assert { type: 'json' };
 
 export default function handler(req, res) {
 
-    // CORS headers (optional if frontend is on another domain)
+    // CORS headers
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
     res.setHeader("Access-Control-Allow-Headers", "Content-Type");
