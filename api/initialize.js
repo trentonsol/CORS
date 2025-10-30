@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   try {
 
 
-    randomNumber = Math.floor(Math.random() * audioData.length);
+    const randomNumber = Math.floor(Math.random() * audioData.length);
 
     // Check if the key exists
     const existsRootIndex = await redis.exists("rootIndex");
