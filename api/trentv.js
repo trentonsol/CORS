@@ -1,5 +1,5 @@
-import audioData from '../data/audioData.json' assert { type: 'json' };
-import footerData from '../data/footerData.json' assert { type: 'json' };
+import audioData from '../data/audioData.json' with { type: 'json' };
+import footerData from '../data/footerData.json' with { type: 'json' };
 
 
 export default function handler(req, res) {
