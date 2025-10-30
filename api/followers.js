@@ -24,7 +24,8 @@ export default async function handler(req, res) {
     }
 
     const count = await redis.get("count");
-    return res.status(200).json({count});
+    const count2 = await redis.get("count2");
+    return res.status(200).json({count2});
   } catch (error) {
     console.error("Error using redis:", error);
     return res.status(500).json({ error: "Error using redis" });
