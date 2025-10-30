@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 
+
 /**
  * Serverless function that returns all file names inside the /public folder (recursively).
  */
