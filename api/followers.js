@@ -1,6 +1,6 @@
-import { createClient } from 'redis';
+import Redis from 'redis';
 
-const redis = await createClient().connect();
+const redis = new Redis(process.env.REDIS_URL)
 
 export default async function handler(req, res) {
 
