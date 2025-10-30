@@ -18,15 +18,17 @@ export default function handler(req, res) {
         const rootIndex = Math.floor(Math.random() * audioDataLength);
         const currentIndex = (rootIndex + 5) % audioDataLength
         const nextUpIndex = (currentIndex + 1) % audioDataLength;
+        const voiced = (currentIndex - rootIndex) % audioDataLength;
         let result = {};
 
         result.audioData = audioData[currentIndex];
         result.nexUp = { name: audioData[nextUpIndex].name, title: audioData[nextUpIndex].title };
         result.footerData = footerData[currentIndex];
+        
         result.stats = {
             "total": audioDataLength,
-            "queued": audioDataLength - ((currentIndex - rootIndex) % audioDataLength),
-            "voiced": (currentIndex - rootIndex) % audioDataLength,
+            "queued": audioDataLength - voiced,
+            "voiced": voiced,
             "pfi": Math.floor(Math.random() * 100) + 1,
             "totalOnAir": voiced * 75
         };
