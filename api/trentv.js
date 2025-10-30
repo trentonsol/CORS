@@ -8,7 +8,7 @@ function modulo(dividend, divisor) {
   return ((dividend % divisor) + divisor) % divisor;
 }
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
 
     // CORS headers
     res.setHeader("Access-Control-Allow-Origin", "*");
@@ -21,8 +21,8 @@ export default function handler(req, res) {
 
     try {
         const audioDataLength = audioData.length;
-        const rootIndex = Math.floor(Math.random() * audioDataLength);
-        const currentIndex = modulo((rootIndex + 5), audioDataLength);
+        const rootIndex = await redis.get("rootIndex");
+        const currentIndex = await redis.get("currentIndex");
         const nextUpIndex = modulo((currentIndex + 1), audioDataLength);
         const voiced = modulo((currentIndex - rootIndex), audioDataLength);
         let result = {};
