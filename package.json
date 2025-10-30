@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/trentonsol/CORS#readme",
   "dependencies": {
-    "redis": "^5.9.0"
+    "ioredis": "^5.8.2"
   }
 }
