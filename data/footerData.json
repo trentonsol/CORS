@@ -1,0 +1,92 @@
+[
+  {
+    "trending": ["The Clockmaker’s Secret", "Frozen Echoes", "The Lantern Keeper"],
+    "spotlight": ["The River That Remembered", "The Painter of Shadows", "The Sandstorm Prophecy"],
+    "news": [
+      "‘The Clockmaker’s Secret’ Reaches One Million Streams",
+      "‘Frozen Echoes’ Wins Northern Writers Award",
+      "New Exhibit Explores Time and Memory in Storytelling"
+    ]
+  },
+  {
+    "trending": ["The Painter of Shadows", "Beneath the Emerald Sky", "The Silent Algorithm"],
+    "spotlight": ["The Lantern Keeper", "Echoes of the Sakura", "Whispers of the Desert"],
+    "news": [
+      "‘The Painter of Shadows’ Receives Praise for Visual Imagery",
+      "Liam O’Connor Discusses Inspiration for ‘Beneath the Emerald Sky’",
+      "Podcast ‘The Silent Algorithm’ Tops Tech Fiction Charts"
+    ]
+  },
+  {
+    "trending": ["Whispers of the Desert", "Echoes of the Sakura", "The Sandstorm Prophecy"],
+    "spotlight": ["The Clockmaker’s Secret", "Beneath the Emerald Sky", "Frozen Echoes"],
+    "news": [
+      "‘Whispers of the Desert’ Becomes a Cultural Phenomenon",
+      "Animated Adaptation of ‘Echoes of the Sakura’ Premieres in Tokyo",
+      "‘The Sandstorm Prophecy’ Sparks Interest in Middle Eastern Myths"
+    ]
+  },
+  {
+    "trending": ["Beneath the Emerald Sky", "The River That Remembered", "Frozen Echoes"],
+    "spotlight": ["Whispers of the Desert", "The Clockmaker’s Secret", "The Painter of Shadows"],
+    "news": [
+      "‘Beneath the Emerald Sky’ Earns Irish Literature Award",
+      "Nia Dlamini’s ‘The River That Remembered’ Gains Global Attention",
+      "‘Frozen Echoes’ Adaptation in Early Production"
+    ]
+  },
+  {
+    "trending": ["The River That Remembered", "The Lantern Keeper", "The Painter of Shadows"],
+    "spotlight": ["Echoes of the Sakura", "The Sandstorm Prophecy", "The Silent Algorithm"],
+    "news": [
+      "‘The River That Remembered’ Celebrated at African Storytelling Festival",
+      "‘The Lantern Keeper’ Hits Streaming Milestone",
+      "Isabella Rossi Releases Illustrated Edition of ‘The Painter of Shadows’"
+    ]
+  },
+  {
+    "trending": ["Echoes of the Sakura", "The Silent Algorithm", "Beneath the Emerald Sky"],
+    "spotlight": ["The Clockmaker’s Secret", "The Lantern Keeper", "Whispers of the Desert"],
+    "news": [
+      "‘Echoes of the Sakura’ Debuts to Record Listens",
+      "Tech Enthusiasts Applaud ‘The Silent Algorithm’",
+      "‘Beneath the Emerald Sky’ to Become Radio Drama Series"
+    ]
+  },
+  {
+    "trending": ["Frozen Echoes", "Whispers of the Desert", "The Sandstorm Prophecy"],
+    "spotlight": ["The Lantern Keeper", "Echoes of the Sakura", "The Clockmaker’s Secret"],
+    "news": [
+      "‘Frozen Echoes’ Explores Themes of Isolation and Renewal",
+      "‘Whispers of the Desert’ Sequel Announced for 2026",
+      "‘The Sandstorm Prophecy’ Shortlisted for Global Narrative Prize"
+    ]
+  },
+  {
+    "trending": ["The Lantern Keeper", "The Clockmaker’s Secret", "The River That Remembered"],
+    "spotlight": ["Beneath the Emerald Sky", "The Painter of Shadows", "Frozen Echoes"],
+    "news": [
+      "‘The Lantern Keeper’ Resonates with Global Audiences",
+      "Interactive Exhibit Based on ‘The Clockmaker’s Secret’ Opens in London",
+      "‘The River That Remembered’ Inspires Documentary Project"
+    ]
+  },
+  {
+    "trending": ["The Sandstorm Prophecy", "Echoes of the Sakura", "The Silent Algorithm"],
+    "spotlight": ["Whispers of the Desert", "The Lantern Keeper", "The River That Remembered"],
+    "news": [
+      "‘The Sandstorm Prophecy’ Wins Best Debut Narrative",
+      "‘Echoes of the Sakura’ Added to Tokyo Literature Museum Archive",
+      "‘The Silent Algorithm’ Sparks Debate About Conscious Machines"
+    ]
+  },
+  {
+    "trending": ["The Silent Algorithm", "Frozen Echoes", "Beneath the Emerald Sky"],
+    "spotlight": ["The Painter of Shadows", "Whispers of the Desert", "The Clockmaker’s Secret"],
+    "news": [
+      "‘The Silent Algorithm’ Selected for TechLit Conference Showcase",
+      "‘Frozen Echoes’ Earns Praise for Emotional Depth",
+      "‘Beneath the Emerald Sky’ Adapted into VR Experience"
+    ]
+  }
+]
