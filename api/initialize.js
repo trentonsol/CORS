@@ -32,7 +32,10 @@ export default async function handler(req, res) {
       await redis.set("currentIndex", randomNumber);
     }
 
-    return res.status(200).json({rootIndex, urrentIndex});
+    const rootIndex = await redis.get("rootIndex");
+    const currentIndex = await redis.get("currentIndex");
+
+    return res.status(200).json({rootIndex, currentIndex});
   } catch (error) {
     console.error("Error using redis:", error);
     return res.status(500).json({ error: "Error using redis" });
