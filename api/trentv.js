@@ -24,12 +24,12 @@ export default function handler(req, res) {
         result.nexUp = { name: audioData[nextUpIndex].name, title: audioData[nextUpIndex].title };
         result.footerData = footerData[currentIndex];
         result.stats = {
-            total: audioDataLength,
-            queued: audioDataLength - ((currentIndex - rootIndex) % audioDataLength),
-            voiced: (currentIndex - rootIndex) % audioDataLength,
-            pfi: Math.floor(Math.random() * 100) + 1,
-            totalOnAir: voiced * 75
-        }
+            "total": audioDataLength,
+            "queued": audioDataLength - ((currentIndex - rootIndex) % audioDataLength),
+            "voiced": (currentIndex - rootIndex) % audioDataLength,
+            "pfi": Math.floor(Math.random() * 100) + 1,
+            "totalOnAir": voiced * 75
+        };
 
         return res.status(200).json(result);
     } catch (error) {
