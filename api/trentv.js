@@ -1,5 +1,8 @@
+import Redis from 'ioredis';
 import audioData from '../data/audioData.json' with { type: 'json' };
 import footerData from '../data/footerData.json' with { type: 'json' };
+
+const redis = new Redis(process.env.REDIS_URL)
 
 function modulo(dividend, divisor) {
   return ((dividend % divisor) + divisor) % divisor;
@@ -17,7 +20,7 @@ export default function handler(req, res) {
     }
 
     try {
-        const audioDataLength = 10;
+        const audioDataLength = audioData.length;
         const rootIndex = Math.floor(Math.random() * audioDataLength);
         const currentIndex = modulo((rootIndex + 5), audioDataLength);
         const nextUpIndex = modulo((currentIndex + 1), audioDataLength);
