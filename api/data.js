@@ -21,8 +21,8 @@ export default async function handler(req, res) {
 
     try {
         const audioDataLength = audioData.length;
-        const rootIndex = await parseInt(redis.get("rootIndex"));
-        const currentIndex = await parseInt(redis.get("currentIndex"));
+        const rootIndex = parseInt(await redis.get("rootIndex"));
+        const currentIndex = parseInt(await redis.get("currentIndex"));
         const nextUpIndex = modulo(currentIndex + 1, audioDataLength);
         const voiced = modulo(currentIndex - rootIndex, audioDataLength);
         let result = {};
