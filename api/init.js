@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     const randomNumber = Math.floor(Math.random() * audioDataLength);
     const currentIndex = randomNumber;
 
-    result.currentIndex = randomNumber;
+    result.currentIndex = currentIndex;
     
     result.nexUp = { 
       name: audioData[currentIndex].name, 
