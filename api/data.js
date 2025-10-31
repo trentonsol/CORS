@@ -28,7 +28,7 @@ export default async function handler(req, res) {
         let result = {};
 
         result.audioData = audioData[currentIndex];
-        result.nexUp = { name: audioData[nextUpIndex].name, title: audioData[nextUpIndex].title };
+        result.nextUp = { name: audioData[nextUpIndex].name, title: audioData[nextUpIndex].title };
         result.footerData = footerData[currentIndex];
 
         result.stats = {
