@@ -21,10 +21,10 @@ export default async function handler(req, res) {
 
     try {
         const audioDataLength = audioData.length;
-        const rootIndex = await redis.get("rootIndex");
-        const currentIndex = await redis.get("currentIndex");
-        const nextUpIndex = modulo((currentIndex + 1), audioDataLength);
-        const voiced = modulo((currentIndex - rootIndex), audioDataLength);
+        const rootIndex = await parseInt(redis.get("rootIndex"));
+        const currentIndex = await parseInt(redis.get("currentIndex"));
+        const nextUpIndex = modulo(currentIndex + 1, audioDataLength);
+        const voiced = modulo(currentIndex - rootIndex, audioDataLength);
         let result = {};
 
         result.audioData = audioData[currentIndex];
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
             "totalOnAir": voiced * 75
         };
 
-        await redis.set("currentIndex", modulo(parseInt(currentIndex) + 1, audioDataLength));
+        await redis.set("currentIndex", modulo(currentIndex + 1, audioDataLength));
         return res.status(200).json(result);
     } catch (error) {
         console.error("Error reading public folder:", error);
