@@ -1,70 +1,70 @@
 [
   {
     "id": 1,
-    "audio": "voice_001.mp3",
+    "audio": "voice_001.wav",
     "name": "Alice",
     "country": "United States",
     "title": "The Silent Algorithm"
   },
   {
     "id": 2,
-    "audio": "voice_002.mp3",
+    "audio": "voice_002.wav",
     "name": "Carlos",
     "country": "Mexico",
     "title": "Whispers of the Desert"
   },
   {
     "id": 3,
-    "audio": "voice_003.mp3",
+    "audio": "voice_003.wav",
     "name": "Hiroshi",
     "country": "Japan",
     "title": "Echoes of the Sakura"
   },
   {
     "id": 4,
-    "audio": "voice_004.mp3",
+    "audio": "voice_004.wav",
     "name": "Fatima",
     "country": "United Arab Emirates",
     "title": "The Sandstorm Prophecy"
   },
   {
     "id": 5,
-    "audio": "voice_005.mp3",
+    "audio": "voice_005.wav",
     "name": "Liam",
-    "age": 26,
+    "country": "Ireland",
     "title": "Beneath the Emerald Sky"
   },
   {
     "id": 6,
-    "audio": "voice_006.mp3",
+    "audio": "voice_006.wav",
     "name": "Sophia",
     "country": "Germany",
     "title": "The Clockmaker’s Secret"
   },
   {
     "id": 7,
-    "audio": "voice_007.mp3",
+    "audio": "voice_007.wav",
     "name": "David",
     "country": "Canada",
     "title": "Frozen Echoes"
   },
   {
     "id": 8,
-    "audio": "voice_008.mp3",
+    "audio": "voice_008.wav",
     "name": "Isabella",
     "country": "Italy",
     "title": "The Painter of Shadows"
   },
   {
     "id": 9,
-    "audio": "voice_009.mp3",
+    "audio": "voice_009.wav",
     "name": "Chen",
     "country": "China",
     "title": "The Lantern Keeper"
   },
   {
     "id": 10,
-    "audio": "voice_010.mp3",
+    "audio": "voice_010.wav",
     "name": "Nia",
     "country": "South Africa",
     "title": "The River That Remembered"
